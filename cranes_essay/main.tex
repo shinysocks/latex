@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+
+% Margin - 1 inch on all sides
+\usepackage[letterpaper]{geometry}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+\usepackage{fontspec}
+\usepackage{tgtermes}
+
+\setmainfont[
+ ItalicFont={texgyretermes-italic.otf},
+ ]{texgyretermes-regular.otf}
+
+
+% Doublespacing
+\usepackage{setspace}
+\doublespacing
+
+% Outline stuffs
+\usepackage{outlines}
+\usepackage{enumitem}
+
+\setenumerate[1]{label=\Roman*.}
+\setenumerate[2]{label=\Alph*.}
+\setenumerate[3]{label=\roman*.}
+\setenumerate[4]{label=\alph*.}
+
+% Begin document
+\begin{document}
+
+% Title
+\begin{center}
+Outline
+\end{center}
+
+\begin{outline}[enumerate]
+    \1 Introduction
+        \2 cool thesis
+
+    \1 Body
+        \2 topic sentence
+            \3 specific detail
+
+    \1 Conclusion
+
+\end{outline}
+
+\newpage
+
+% First page name, class, etc
+\noindent
+Noah Dinan \\ Mark Zimmermann \\ COM1001 \\ \today \\
+
+% Title
+\begin{center}
+CRANES!!!
+\end{center}
+
+% Indentation
+\setlength{\parindent}{0.5in}
+
+\end{document}
