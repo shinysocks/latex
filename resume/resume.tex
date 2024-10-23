@@ -1,50 +1,77 @@
-\documentclass[12pt]{article}
+\documentclass[10pt]{article}
+\usepackage{parskip}
+\usepackage{setspace}
+
+% Links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdftitle={Noah Dinan},
+}
 
 % Margin - 1 inch on all sides
 \usepackage[letterpaper]{geometry}
-\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\geometry{top=1.05in, bottom=1.05in, left=1.05in, right=1.05in}
 
+% Font
 \usepackage{fontspec}
-\setmainfont{Inter-Regular.otf}
-
+\setmainfont[
+ BoldFont={Inter-SemiBold.otf},
+ ItalicFont={Inter-Italic.otf},
+ ]{Inter-Regular.otf}
 
 % Doublespacing
 \usepackage{setspace}
 \doublespacing
 
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{15pt}
+
+% Turn off pagenumbering
+\pagenumbering{gobble}
+
 % Begin document
 \begin{document}
 
-\textbf{Noah Dinan}\\[1cm]
+{\fontsize{19pt}{0pt}\selectfont \textbf{Noah Dinan}}
 
-https://shinysocks.net\\
+\href{https://shinysocks.net}{https://shinysocks.net}\\
 noah@shinysocks.net\\
-+14142311015\\
++14142311015
 
-\textbf{Education}\\
-B.S. in Software Engineering, Minor in Cybersecurity
-Milwaukee School of Engineering
-2024 - 2028
-Valedictorian, Ronald W. Reagan College Preparatory High School
-2020 - 2024
-Experience
-Technology Intern, Northwestern Mutual
-June 2024 - August 2024
+{\fontsize{11pt}{0pt}\selectfont \textbf{Education}}\\
+B.S. in Software Engineering, Minor in Cybersecurity\\
+Milwaukee School of Engineering\\
+\textit{2024 - 2028}
+
+Valedictorian, Ronald W. Reagan College Preparatory High School\\
+\textit{2020 - 2024}
+
+{\fontsize{11pt}{0pt}\selectfont \textbf{Experience}}\\
+Technology Intern, Northwestern Mutual\\
+\textit{June 2024 - August 2024}\\
 Learned and implemented basic principles of frontend development in modern frameworks while
 collaborating with a team of interns. Worked on a web-based data monitoring tool in python.
-Programmer, FIRST Robotics Team 1675
-February 2023 - May 2024
+
+Programmer, FIRST Robotics Team 1675\\
+\textit{February 2023 - May 2024}\\
 Planned and developed the codebase for subsystems on the 2024 robot, "Hansel"
-Software Development Intern, Jet Constellations
-June 2023 - August 2023
+
+Software Development Intern, Jet Constellations\\
+\textit{June 2023 - August 2023}\\
 Provided insightful UX feedback for milkywaytechub.com while developing design skills by
 creating wireframes and app mockups in Figma. Learned the basics of data analysis with PowerBI.
-Cashier, G. Groppi Food Market
-May 2021 - April 2023
+
+Cashier, G. Groppi Food Market\\
+\textit{May 2021 - April 2023}\\
 Performed part time food service work in the Bay View neighborhood.
-Skills
-Agile methodologies, Collaboration, Time management
-Java, Python, Javascript, Bash, C\#, Rust
+
+{\fontsize{11pt}{0pt}\selectfont \textbf{Skills}}\\
+Agile methodologies, Collaboration, Time management\\
+Java, Python, Javascript, Bash, C\#, Rust\\
 Linux, Git, React, Express.js, Pygame, JavaFX / Swing, Unity, Docker, Gradle, LaTeX
 
 \end{document}
