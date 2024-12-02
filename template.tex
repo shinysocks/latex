@@ -1,0 +1,83 @@
+
+   %%%%%%%%%%%%%%%%%%%%%%%
+ %%%  NOAH'S SUPER COOL  %%%
+%%%%      ACADEMIC       %%%%
+ %%%   LATEX TEMPLATE    %%%
+   %%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\usepackage{fontspec}
+\usepackage{tgtermes}
+\usepackage{hanging}
+\setmainfont[
+ ItalicFont={texgyretermes-italic.otf},
+ BoldFont={texgyretermes-bold.otf},
+ ]{texgyretermes-regular.otf}
+\usepackage{setspace}
+\doublespacing
+\usepackage{outlines}
+\usepackage{enumitem}
+\setenumerate[1]{label=\Roman*.}
+\setenumerate[2]{label=\Alph*.}
+\setenumerate[3]{label=\roman*.}
+\setenumerate[4]{label=\alph*.}
+\begin{document}
+
+% Title Page
+\pagenumbering{gobble} % remove page numbers
+\begin{center}
+\topskip0pt
+\vspace*{\fill}
+Title \\ Noah Dinan \\ Teacher \\ Course \\ \today \\
+\vspace*{\fill}
+\end{center}
+
+\newpage
+\pagenumbering{arabic} % resume page numbering
+
+% Outline
+\begin{center}
+Outline
+\end{center}
+
+\begin{outline}[enumerate]
+
+\1 intro
+    \2 hook
+
+\1 conclusion
+    \2 so
+        \3 many
+            \4 levels
+
+\end{outline}
+
+% Alternative snippet to title page
+\newpage
+\noindent
+Noah Dinan \\ Teacher \\ Course \\ \today \\
+
+\begin{center}
+Title
+\end{center}
+
+\setlength{\parindent}{0.5in}
+
+Content goes here.
+
+% Citations page
+\newpage
+
+\begin{center}
+Works Cited
+\end{center}
+
+\begin{hangparas}{0.5in}{1}
+
+Citation citation by author author which was used at some time and there's a cool hanging indent!!
+Just writing lots of words so the hanging indent will go!
+
+\end{hangparas}
+\end{document}
