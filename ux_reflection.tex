@@ -1,0 +1,86 @@
+
+   %%%%%%%%%%%%%%%%%%%%%%%
+ %%%  NOAH'S SUPER COOL  %%%
+%%%%      ACADEMIC       %%%%
+ %%%   LATEX TEMPLATE    %%%
+   %%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\usepackage{fontspec}
+\usepackage{tgtermes}
+\usepackage{hanging}
+\setmainfont[
+ ItalicFont={texgyretermes-italic.otf},
+ BoldFont={texgyretermes-bold.otf},
+ ]{texgyretermes-regular.otf}
+\usepackage{setspace}
+\doublespacing
+\usepackage{outlines}
+\usepackage{enumitem}
+\setenumerate[1]{label=\Roman*.}
+\setenumerate[2]{label=\Alph*.}
+\setenumerate[3]{label=\roman*.}
+\setenumerate[4]{label=\alph*.}
+\begin{document}
+
+\pagenumbering{gobble}
+
+% Alternative snippet to title page
+\newpage
+\noindent
+Noah Dinan \\ Yun Dong \\ UXD 1001 \\ \today \\
+
+\begin{center}
+Reflection 1
+\end{center}
+
+\setlength{\parindent}{0.5in}
+
+    What are the main takeaways from each reading? [article]
+     - Intelligent interfaces
+        - Interacting with machines can be done with gestures and other traditionally human -> human interactions.
+        - Invade privacy of consumers to make assumptions about emotional response
+        - Conversational technologies / speech based interaction
+
+     - Human Factors in Design [article]
+        - Recognition beats recall (and working memory)
+            + recognizing with icons rather than remembering how to do something is always easier
+        - Primacy and recency effects
+            + when listening from a list, people tend to remember things early on and at the end
+            + place important information early on in a list that a user may read
+        - Affordances are everywhere
+            + how user thinks they should interact with a given system 
+            + visual and tactile clues for how a user should perform an interaction
+
+    - Jakob's Law [article]
+        - Familiarity is most important when considering UX changes or
+          when designing a new interface for a website.
+
+    How do these readings complement or challenge each other?
+     - improved efficiency (familiarity improves efficiency)
+     - so much data presents increased risk for privacy related breaches
+     - ethical risks to extended data collection for users
+
+    Cognitive Bias in Design: The Human Factors in Design article introduces cognitive patterns that influence user behavior.
+    Reflect on a product you’ve used that failed (or succeeded) because it did not consider these cognitive factors. What would you change about its design?
+        - light button with in dierck's hall classrooms
+        - it is unclear which light each button is associated with and if they are enabled or not
+        - this is an example of a failed affordance
+
+    Ethical Considerations in Design: AI-powered interfaces are becoming more predictive and autonomous.
+    What ethical concerns arise when machines make decisions for users? How should designers balance personalization with user autonomy?
+        - mass data = mass privacy risk in the event of a breach
+    
+    Select a product, interface, or service and analyze it based on insights from the readings.
+    How could this product be improved using principles from Laws of UX or cognitive design factors?
+    If you were designing an intelligent interface, how would you ensure it aligns with human needs rather than just technical capabilities?
+        - iPhone Mini 12
+        - This product could be improved by reintroducing bezels to the design and increasing overall durability
+        - The phone is prone to being scratched when used without a case in a way that feels almost intentional to the design
+        - another feature of a more tactile design could be physical toggles for user I/O such and camera or microphone toggles
+            + this would increase the privacy
+            + this would not impact the usability or familiarity of the product as much
+              of those features are implemented through software rather than hardware.
+\end{document}
