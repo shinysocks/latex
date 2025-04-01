@@ -1,0 +1,93 @@
+
+   %%%%%%%%%%%%%%%%%%%%%%%
+ %%%  NOAH'S SUPER COOL  %%%
+%%%%      ACADEMIC       %%%%
+ %%%   LATEX TEMPLATE    %%%
+   %%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{tgtermes}
+\usepackage{hanging}
+\usepackage{gensymb}
+\setmainfont[
+ ItalicFont={texgyretermes-italic.otf},
+ BoldFont={texgyretermes-bold.otf},
+ ]{texgyretermes-regular.otf}
+\usepackage{setspace}
+\doublespacing
+\usepackage{graphicx}
+\graphicspath{ {./} }
+
+\begin{document}
+
+% Title Page
+\pagenumbering{gobble} % remove page numbers
+\begin{center}
+\topskip0pt
+\vspace*{\fill}
+The Ballistic Pendulum Lab 10 \\ Noah Dinan \\ PHY 1110 - Mayer \\ \today \\
+\vspace*{\fill}
+\end{center}
+
+\newpage
+\pagenumbering{arabic} % resume page numbering
+\setlength{\parindent}{0in}
+
+\textbf{Results}
+
+In this lab report, we utilized the theories of conservation of momentum and energy to calculate the velocity
+of a projectile ($v_A$) using two different methods and compared the two values found.
+
+To examine potential sources of error, as we did not use a level, the angle of the projectile launcher
+may not have been perfectly level. We also may have had error from
+improper measurement of height and distance for the second part of the experiment.
+
+\vspace{0.5cm}
+
+The first method for finding $v_A$ is by firing the steel ball into a pendulum which will result in an inelastic
+collision. The steel ball and pendulum will obtain kinetic energy: $\frac{1}{2}I\omega^2$ which can then be used to
+determine the initial velocity of the steel ball ($m_A$).
+
+First, we measured the following constant values:
+\begin{enumerate}
+    \item the mass of the steel ball, $m_A$ = 0.0667 kg
+    \item the mass of the pendulum, $m_B$ = 0.2093 kg
+    \item the length of the pendulum, $L$ = 0.31 m
+\end{enumerate}
+
+After several trials firing the projectile into the pendulum, we measured an average value for $\theta$
+to be $\text{35}\degree$. Using this value we can determine $h = L - L\cos(35) = 0.59 m$.
+
+Based on the equation for kinetic energy, we can find $v\prime$ using the equation below
+\[ v\prime = L\sqrt{\frac{2mgh}{I}} \]
+
+Where $I = (m_A + m_B)L^2$, and $h$ is found above.
+
+And then...
+\[ v_A = \frac{(m_A + m_B)v\prime}{m_A} \]
+\[ v_A = 4.49 ms^{-1} \]
+
+\newpage
+We can compare this to the value obtained by examining the projectile fired off of the tabletop into the catch box.
+We found the horizontal distance from the launcher to landing point of the projectile was 2.33 meters and the vertical
+distance was 1.21 meters.
+
+Using these values we can find model $v_A$ using the equation below. 
+
+\[ v_A = \frac{2.33}{\sqrt{\frac{1.21(2)}{g}}} \]
+\[ v_A = 4.69 ms^{-1} \]
+
+\textbf{Conclusions}
+
+To conclude, our two values were very close whether firing the projectile into a pendulum or off a table.
+
+\[ 4.49 ms^{-1} \text{ vs } 4.69 ms^{-1} \]
+
+This follows the theories of conservation of momentum and energy as a consistent velocity means these two quantities were conserved
+for the experiment.
+
+\end{document}
