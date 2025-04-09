@@ -1,0 +1,154 @@
+
+   %%%%%%%%%%%%%%%%%%%%%%%
+ %%%  NOAH'S SUPER COOL  %%%
+%%%%      ACADEMIC       %%%%
+ %%%   LATEX TEMPLATE    %%%
+   %%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{tgtermes}
+\usepackage{hanging}
+\usepackage{gensymb}
+\setmainfont[
+ ItalicFont={texgyretermes-italic.otf},
+ BoldFont={texgyretermes-bold.otf},
+ ]{texgyretermes-regular.otf}
+\usepackage{setspace}
+\doublespacing
+\usepackage{graphicx}
+\graphicspath{ {./} }
+
+\begin{document}
+
+% Title Page
+\pagenumbering{gobble} % remove page numbers
+\begin{center}
+\topskip0pt
+\vspace*{\fill}
+Hidden Cylinder P \\ Lab 11 - Noah Dinan \\ PHY 1110 - Mayer \\ \today \\
+\vspace*{\fill}
+\end{center}
+
+\newpage
+\pagenumbering{arabic} % resume page numbering
+\setlength{\parindent}{0in}
+
+\textbf{Introduction}\vspace{1em}
+
+For this lab, we were given two wooden blocks of differing dimensions and tasked with finding the
+diameter of cylindrical cavity embedded within one of them. The blocks we recieved were labeled $P$.
+We had access a digital scale to find mass, as well as a ruler and caliper for length measurements.
+
+\vspace{1em}
+
+Because we knew both blocks are made of the same material, we can find the density for both blocks
+and whichever is more dense does not contain the cylindrical cavity. Using the found density,
+we can solve for the missing volume and diameter for the cylinder.
+
+\vspace{1em}
+
+The most basic equation used in this experiment is the equation for density, shown below.
+
+\[ \rho = \frac{ \text{mass} } { \text{volume} } \]
+\vspace{0.5em}
+
+From this equation, we can derive an equation better suited for solving for missing volume.
+For the following equation, a subscript of $\text{\_}_1$ relates to the unmodified block and
+a $\text{\_}_2$ relates to the block containing a cylindrical cavity.
+
+\[ \rho_1 = \frac{m_2}{V_2 - \pi r^{2} (\frac{h_2}{2})} \] 
+\vspace{0.5em}
+
+We can rearrange this equation to solve for the radius of the hidden cavity and finally the 
+diameter.
+
+\[ r = \sqrt{ \frac{m_2 - \rho_1 V_2}{\pi ( \frac{h_2}{2} ) \rho_1} } \]
+\vspace{0.5em}
+
+Where $V_2 = (l_2) (w_2) (h_2)$.
+
+\newpage
+
+Throughout our calculations, we ensured that uncertainty was propagated using the
+respective equations for various operations.
+
+\vspace{1em}
+
+For addition such that $z = x + y$
+\[ u_z = \sqrt{ u_x^{2} + u_y^{2} } \]
+
+For multiplication such that $z = xy$
+\[ \frac{u_z}{z} = \sqrt{ (\frac{u_x}{x})^{2} + (\frac{u_y}{y})^{2} } \]
+
+For squaring such that $z = x^{2}$
+\[ \frac{u_z}{z} = \sqrt{ 2(\frac{u_x}{x}) } \]
+
+\vspace{1em}
+
+\textbf{Experimental Technique}\vspace{1em}
+
+The first step for our procedure was determining the lengths, widths, heights, and masses of the
+two wooden blocks. The length measurements were initially performed with a caliper but we were unable to
+properly tare the instrument and switched to a ruler instead.
+ 
+Our measurements are listed below in the \textbf{Results} section.
+
+\vspace{1em}
+
+After taking measurements we simply input the numbers into the equations derived in the
+introduction to first find the value for density $\rho_1$ and then find the value for $r$.
+This procedure is further outlined below.
+
+\newpage
+
+\textbf{Results}\vspace{1em}
+
+Our measurements for this experiment:
+\begin{itemize}
+    \item the mass of the first block, $m_1 = 93.1$ grams
+    \item the mass of the second block, $m_2 = 55.4$ grams
+    \item the length of the first block, $l_1 = 8.1$ centimeters
+    \item the length of the second block, $l_2 = 6.2$ centimeters
+    \item the width of the first block, $w_1 = 6.3$ centimeters
+    \item the width of the second block, $w_2 = 6.4$ centimeters
+    \item the height of the first block, $h_1 = 2.1$ centimeters
+    \item the height of the second block, $h_2 = 2.2$ centimeters
+\end{itemize}
+
+\vspace{1em}
+
+The first step to finding our value for diameter was to find the
+density of the first wooden block.
+
+\[ \rho_1 = \frac{ m_1 } { (l_1) (w_1) (h_1) } \]
+
+\[ 0.869 = \frac{ 93.1 } { (8.1) (6.3) (2.1) } \]
+
+using this density, we can solve for $r$ and double it to get a value for diameter.
+
+\[ r = \sqrt{ \frac{m_2 - \rho_1 V_2}{\pi ( \frac{h_2}{2} ) \rho_1} } \]
+
+\[ r = \sqrt{ \frac{55.4 - (0.869) (107.2)}{\pi ( \frac{2.2}{2} ) (0.869)} } \]
+
+\[ r = 2.38 \pm 0.401 \text{cm} \]
+
+and we can easily convert to diameter:
+
+\[ d = 2r = 4.76 \pm 0.401 \text{cm}\]
+
+For this experiment we encountered possible experimental error while measuring
+lengths for the blocks, especially considering we we're unable to use the
+caliper. This was the only major source of error.
+
+\vspace{1em}
+
+\textbf{Conclusions}\vspace{1em}
+
+To conclude, our result of $4.76 \pm 0.401 \text{cm}$ absolutely seems reasonable when considering
+the dimensions of the wooden block and measurement tools. The wooden block set we were given was labeled $P$.
+
+\end{document}
