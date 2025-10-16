@@ -7,17 +7,16 @@ class:
   - invert
 ---
 
-# MARP test slide deck
-Wow! This is incredible content
-Could you tell me more, I want to add an image for example
-
-List:
-- hello
-- goodbye
+# Why to get a cat!
+Cats are the best animal here are a few reasons why..
+ 
+---
+# Reasons
+* litter box!
+* other reasons probably...
 
 ---
 
-# another page
-If I was a content I would be this one!
-<br>
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKokeVcAuyCSayNArOvGODdH38xlLWkDGBMg&s)
+# Conclusions
+Here we conclude the presentation with a logo
+![width:400px](https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg)
