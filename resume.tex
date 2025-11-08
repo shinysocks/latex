@@ -13,65 +13,60 @@
 
 % Margin - 1 inch on all sides
 \usepackage[letterpaper]{geometry}
-\geometry{top=1.05in, bottom=1.05in, left=1.05in, right=1.05in}
+\geometry{top=1.10in, bottom=1.10in, left=1.10in, right=1.10in}
 
 % Font
 \usepackage{fontspec}
 \setmainfont[
- BoldFont={Inter-SemiBold.otf},
+ BoldFont={Inter-Bold.otf},
  ItalicFont={Inter-Italic.otf},
+ SlantedFont={Inter-SemiBold.otf},
  ]{Inter-Regular.otf}
 
 % Doublespacing
 \usepackage{setspace}
 \doublespacing
 
-\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\baselinestretch}{1.6}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{15pt}
 
 % Turn off pagenumbering
 \pagenumbering{gobble}
 
-% Begin document
 \begin{document}
 
-{\fontsize{19pt}{0pt}\selectfont \textbf{Noah Dinan}}
+{\fontsize{20pt}{0pt}\selectfont \textbf{Noah Dinan}}
 
-\href{https://shinysocks.net}{https://shinysocks.net}\\
+\href{https://shinysocks.net}{shinysocks.net}\\
 noah@shinysocks.net\\
 +14142311015
 
-{\fontsize{11pt}{0pt}\selectfont \textbf{Education}}\\
-B.S. in Software Engineering, Minor in Cybersecurity\\
-Milwaukee School of Engineering\\
-\textit{2024 - 2028}
 
-Valedictorian, Ronald W. Reagan College Preparatory High School\\
-\textit{2020 - 2024}
+{\fontsize{11pt}{0pt}\selectfont \textbf{Education}}\\
+\textsl{B.S. in Software Engineering, Milwaukee School of Engineering} \hfill \textit{2024 - 2028}
+
 
 {\fontsize{11pt}{0pt}\selectfont \textbf{Experience}}\\
-Technology Intern, Northwestern Mutual\\
-\textit{June 2024 - August 2024}\\
+\textsl{Temporary Intern, Northwestern Mutual} \hfill \textit{June 2025 - Present}\\
+Maintaining and improving a monitoring script for run-continuous and batch data integration jobs.
+Reducing costs in AWS, updating CI automation in GitLab.
+
+\textsl{Technology Intern, Northwestern Mutual} \hfill \textit{June 2024 - August 2024}\\
 Learned and implemented basic principles of frontend development in modern frameworks while
 collaborating with a team of interns. Worked on a web-based data monitoring tool in python.
 
-Programmer, FIRST Robotics Team 1675\\
-\textit{February 2023 - May 2024}\\
-Planned and developed the codebase for subsystems on the 2024 robot, "Hansel"
-
-Software Development Intern, Jet Constellations\\
-\textit{June 2023 - August 2023}\\
+\textsl{Software Development Intern, Jet Constellations} \hfill \textit{June 2023 - August 2023}\\
 Provided insightful UX feedback for milkywaytechub.com while developing design skills by
 creating wireframes and app mockups in Figma. Learned the basics of data analysis with PowerBI.
 
-Cashier, G. Groppi Food Market\\
-\textit{May 2021 - April 2023}\\
+\textsl{Cashier, G. Groppi Food Market} \hfill \textit{May 2021 - April 2023}\\
 Performed part time food service work in the Bay View neighborhood.
+
 
 {\fontsize{11pt}{0pt}\selectfont \textbf{Skills}}\\
 Agile methodologies, Collaboration, Time management\\
-Java, C++, Python, Javascript, Bash, C\#\\
-Linux, Git, React, Express.js, Pygame, JavaFX / Swing, Unity, Docker, Gradle, LaTeX
+Java, C++, Python, Javascript, Bash, C\#, Linux, Git, React, Express.js,\\
+Pygame, JavaFX / Swing, Unity, Docker, Gradle, LaTeX, Jetpack Compose
 
 \end{document}
